@@ -6,7 +6,6 @@ const Static = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <>
       <h2 className={s.staticTitle}>Statistics</h2>
-      {total ? (
         <>
           <p>Good: {good}</p>
           <p>Neutral: {neutral}</p>
@@ -14,9 +13,6 @@ const Static = ({ good, neutral, bad, total, positivePercentage }) => {
           <p>Total: {total}</p>
           <p>Positive feedback: {positivePercentage}%</p>
         </>
-      ) : (
-        <p>No feedback given</p>
-      )}
     </>
   );
 };
